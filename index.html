@@ -36,22 +36,19 @@
 </div>
 
 <script>
-  function abrirModal(evt, solucionName) {
+  function abrirModal() {
     var i, paises, itemContent;
     paises = document.getElementsByClassName("title");
     modal = document.getElementById("modal");
     
-    // for (i = 0; i < paises.length; i++) {
-      //   // paises[i].style.display = "none";
-      // }
+    
     itemContent = document.getElementsByClassName("item_Content");
     // console.log(itemContent)
 
     for (i = 0; i < itemContent.length; i++) {
        modal.style.display = "flex";
     }
-    // document.getElementById(solucionName).style.display = "block";
-    // evt.currentTarget.className += " active";
+   
   }
 
 
