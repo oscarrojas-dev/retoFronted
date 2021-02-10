@@ -33,8 +33,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
-          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
   margin-bottom: 30px;
 }
 
@@ -45,6 +45,8 @@ body {
   border-radius: 10px;
   padding: 30px 20px;
   text-align: center;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .mainContent .item_Content .title {
@@ -52,6 +54,10 @@ body {
   letter-spacing: 1px;
   text-align: center;
   margin-bottom: 16px;
+}
+
+.mainContent .item_Content .text {
+  padding: 10px 0;
 }
 
 @media (max-width: 850px) {
@@ -102,14 +108,39 @@ body {
 
 .modal .body-modal {
   width: 450px;
-  height: 350px;
   background: #ffffff;
   border-radius: 10px;
   padding: 30px 20px;
   text-align: center;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
 }
 
 .modal .body-modal h2 {
   font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.modal .body-modal .inner-modal {
+  min-height: 100px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .body-modal .btncerrar {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(25deg, #B3B3B3, #737373);
+  display: block;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
