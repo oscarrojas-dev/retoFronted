@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reto Fronted | Entelgy</title>
   <link rel="stylesheet" href="styles.css">
+  
+  <link rel="stylesheet" type="text/css" href="css/all.min.css">
 </head>
 <body>
   <main class="main">
     <div class="content center">
-      <h1 class="title">Paises, capital y su población</h1>
+      <h1 class="title_main">Paises, capital y su población</h1>
 
       <div class="mainContent" id="MainContent"></div>
     </div>
@@ -20,3 +22,41 @@
   <script src="app.js"></script>
 </body>
 </html>
+
+<div class="modal" id="modal">
+	<div class="body-modal">				
+			<h2>Pais </h2><hr>
+			<div class="inner-modal">					
+				<span class="">¡No podrás revertir esto!</span>	
+				
+				<div class="box-nombre " id="box-nombre"></div>
+			</div>			
+			<a href="#" class="btn-cerrar" onclick="cerraModal()"> Cancelar</a>	
+	</div>
+</div>
+
+<script>
+  function abrirModal(evt, solucionName) {
+    var i, paises, itemContent;
+    paises = document.getElementsByClassName("title");
+    modal = document.getElementById("modal");
+    
+    // for (i = 0; i < paises.length; i++) {
+      //   // paises[i].style.display = "none";
+      // }
+    itemContent = document.getElementsByClassName("item_Content");
+    // console.log(itemContent)
+
+    for (i = 0; i < itemContent.length; i++) {
+       modal.style.display = "flex";
+    }
+    // document.getElementById(solucionName).style.display = "block";
+    // evt.currentTarget.className += " active";
+  }
+
+
+  function cerraModal(){   
+    modal.style.display = "none";
+  }
+
+</script>

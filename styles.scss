@@ -12,14 +12,34 @@ body{ background: $crgris; }
 .center{ width:90%; margin:auto;}
 
 // titulo principal
-.title{text-align: center; padding:30px 0;}
+.title_main{text-align: center; padding:30px 0;}
 
 // seccion principal
-.mainContent{width: 100%; background: $crgrisclaro; color:$crgrisoscuro; border-radius: 10px; display: flex; flex-wrap: wrap; box-shadow: 10px 10px 30px rgba(0,0,0,0.7); margin-bottom: 30px;
+.mainContent{width: 100%; background: $crgrisclaro; border-radius: 10px; display: flex; flex-wrap: wrap; box-shadow: 10px 10px 30px rgba(0,0,0,0.7); margin-bottom: 30px;
   // contenedor de pais
-  .item_Content{background: $crblanco; width:calc(33.33% - 20px); margin:10px; border-radius: 10px; padding: 30px 20px;
-    .title{font-size: 24px; letter-spacing: 1px; }    
+  .item_Content{background: $crblanco; width:calc(33.33% - 20px); margin:10px; border-radius: 10px; padding: 30px 20px; text-align: center;
+    .title{font-size: 24px; letter-spacing: 1px; text-align: center; margin-bottom: 16px;}    
+  }  
+}
+
+@media (max-width:850px){
+  .mainContent{
+    .item_Content{width:calc(50% - 30px); margin:15px; transition: all .3s linear;}
+  }
+}
+@media (max-width:650px){
+  .mainContent{
+    .item_Content{width:calc(100% - 20px); margin:10px; transition: all .3s linear;}
+  }
+}
+// pie de pagina o footer
+.footer{padding: 30px; text-align: center; background: $crplomo; color: $crblanco;}
+
+// estilos modal
+.modal{position:absolute; width: 100%; height: 100%; top:0; left:0;
+ background-color: rgba(0,0,0,0.7); display:flex; justify-content: center; align-items: center; display: none; transition: all .3s linear;
+  .body-modal{width: 450px; height: 350px; background: $crblanco; border-radius: 10px;padding:30px 20px;  text-align: center;
+    h2{font-size: 30px;}
   }
 }
 
-.footer{padding: 30px; text-align: center; background: $crplomo; color: $crblanco;}
