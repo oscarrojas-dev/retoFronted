@@ -6,9 +6,20 @@ $crgrisoscuro : #B3B3B3;
 $crplomo : #737373;
 
 
-*{padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif;}
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+a{text-decoration: none;}
 body{ background: $crgris; }
 .center{ width:90%; margin:auto;}
 
-
+// titulo principal
 .title{text-align: center; padding:30px 0;}
+
+// seccion principal
+.mainContent{width: 100%; background: $crgrisclaro; color:$crgrisoscuro; border-radius: 10px; display: flex; flex-wrap: wrap; box-shadow: 10px 10px 30px rgba(0,0,0,0.7); margin-bottom: 30px;
+  // contenedor de pais
+  .item_Content{background: $crblanco; width:calc(33.33% - 20px); margin:10px; border-radius: 10px; padding: 30px 20px;
+    .title{font-size: 24px; letter-spacing: 1px; }    
+  }
+}
+
+.footer{padding: 30px; text-align: center; background: $crplomo; color: $crblanco;}
