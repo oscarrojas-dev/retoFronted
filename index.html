@@ -14,7 +14,9 @@
     <div class="content center">
       <h1 class="title_main">Paises, capital y su población</h1>
       
+      
       <div class="mainContent" id="MainContent"></div>
+
     </div>
 
   </main>
@@ -24,35 +26,12 @@
 </html>
 
 <div class="modal" id="modal">
-	<div class="body-modal">				
+	<!-- <div class="body-modal">				
 			<h2 id="pais">Pais </h2><hr>
 			<div class="inner-modal">					
 				<span class="" id="capital">Capital</span>	
 				<span class="" id="poblacion">Pobalcion</span>				
 			</div>			
 			<a href="#" class="btncerrar" onclick="cerraModal()"> Cerrar</a>	
-	</div>
+	</div> -->
 </div>
-
-<script>
-  function abrirModal() {
-    var i, paises, itemContent;
-    paises = document.getElementsByClassName("title");
-    modal = document.getElementById("modal");
-    
-    
-    itemContent = document.getElementsByClassName("item_Content");
-    // console.log(itemContent)
-
-    for (i = 0; i < itemContent.length; i++) {
-       modal.style.display = "flex";
-    }
-   
-  }
-
-
-  function cerraModal(){   
-    modal.style.display = "none";
-  }
-
-</script>
